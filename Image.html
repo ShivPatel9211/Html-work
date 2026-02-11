@@ -1,30 +1,35 @@
 
-<!DOCTYPE html><!--Version of html-->
-<html><!--Head of html-->
-<head>
-	<title> Listing  <!--Page name-->
-	</title>
-</head>
-<body><!--body is wgere we write our code -->
-<P>My favorite dist is tea</P> <!--Paragraphs-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Bot!</title>
+    <link rel="stylesheet" href="styles.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	 <meta name="referrer" content="no-referrer" />
+  </head>
+  <body>
+      <h1 class="title">Hello Chat Bot!</h1>
+      <p id="currentTime"></p>
+</style>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-<p>List of all ingredient need to make tea</p>
-<!--Unordered list-->
-<ul>
-	<li>Milk</li>
-	<li>Water</li>
-	<li>Sugar</li>
-	<li>Tea</li>
-</ul>
-<p>Step to make tea</p>
-<!--Ordered list-->
-<ol>
-	<li>First light the gas</li>
-	<li>Boil the water and milk for 10 min</li>
-	<li>Add required amount of sugar and tea</li>
-	<li>Then again boil till color of milk not changed</li>
-	<li>Once color of mili is changed it is ready to go..</li>
-</ol>
-<img src="https://i.imgur.com/sfXfyzb.jpga" alt ="Image can't load">
-</body><!--End of body tag-->
-</html><!--end  of html tag-->
+			embeddedservice_bootstrap.init(
+				'00D5j000009kxyN',
+				'Support_Page',
+				'https://pluang4.my.site.com/ESWSupportPage1759231126725',
+				{
+					scrt2URL: 'https://pluang4.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://pluang4.my.site.com/ESWSupportPage1759231126725/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
